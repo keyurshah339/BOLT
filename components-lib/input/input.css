@@ -1,0 +1,20 @@
+.input{
+    border: 0;
+    border-radius: 4px;
+    padding: 5px 5px;
+    outline: none;
+}
+
+.input-primary{
+    border: 1.5px solid var(--primary);
+
+}
+
+.input-secondary{
+    border-radius: 2px;
+    border-bottom: 1.5px solid var(--primary);
+    
+}
+
+
+

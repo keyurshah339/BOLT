@@ -1,0 +1,233 @@
+/* Import Components CSS */
+
+@import url("../components-lib/avatars/avatar.css");
+@import url("../components-lib/alerts/alert.css");
+@import url("../components-lib/badges/badge.css");
+@import url("../components-lib/button/button.css");
+@import url("../components-lib/cards/cards.css");
+@import url("../components-lib/images/image.css");
+@import url("../components-lib/input/input.css");
+@import url("../components-lib/lists/lists.css");
+@import url("../components-lib/nav/navBar.css");
+@import url("../components-lib/modal/modal.css");
+@import url("../components-lib/rating/rating.css");
+@import url("../components-lib/grids/grids.css");
+@import url("../components-lib/text-utilities/text-utilities.css");
+@import url("../components-lib/toasts/toasts.css");
+@import url("../components-lib/notify/notify.css");
+
+/* Font Import*/
+
+@import url("https://fonts.googleapis.com/css2?family=Lexend&display=swap");
+
+/* Doc site styles */
+@import url("./doc-site.css");
+
+/* Landing page CSS */
+
+:root {
+   --primary: rgb(248, 248, 248);
+   --darkgrey: #d4d4d4;
+   --gray: gray;
+   --gray50: #152230;
+   --bgcolor: rgb(161, 17, 17);
+   --badgeColor: #4b5563;
+
+   /* alert colors */
+   --alertSuccesColor: #a7f3d0;
+   --alertErrorColor: #fca5a5;
+   --alertWarningColor: #fef3c7;
+   --alertInfoColor: #c7d2fe;
+   --alertSuccesColorBorder: #059669;
+   --alertErrorColorBorder: #ef4444;
+   --alertWarningColorBorder: #fcd34d;
+   --alertInfoColorBorder: #60a5fa;
+}
+
+* {
+   margin: 0px;
+   padding: 0px;
+   box-sizing: border-box;
+}
+
+body {
+   background-image: url('https://afrest.com/frontend/assets/img/bg.jpg');
+   background-size:cover;
+   text-align: center;
+   margin: auto;
+   font-family: "Lexend", sans-serif;
+   scroll-behavior: smooth;
+}
+
+button {
+   cursor: pointer;
+}
+
+a {
+   text-decoration: none;
+   color: inherit;
+}
+
+.shadow-text-white {
+   font-size: 2rem;
+   text-shadow: 1px 1px whitesmoke;
+}
+
+.bolt-header {
+   width: 100%;
+   position: sticky;
+   top: 0;
+   z-index: 1;
+}
+
+.bolt-header nav {
+   position: sticky;
+
+   z-index: 1;
+}
+
+.bolt-header li:hover {
+   color: white;
+   font-weight: bolder;
+}
+
+.bolt-body {
+   display: flex;
+   /* flex-wrap: wrap; */
+   column-gap: 1rem;
+   width: 80%;
+   margin: auto;
+   margin-bottom: 10rem;
+   justify-content: space-between;
+   align-items: center;
+   font-weight: 600;
+   padding-top: 5rem;
+}
+
+.bolt-body .bolt-about {
+   text-align: justify;
+   display: flex;
+   flex-direction: column;
+   row-gap: 1rem;
+   justify-content: left;
+   color: var(--darkgrey);
+}
+
+.bolt-about > h1 {
+   color: var(--primary);
+   font-size: 4rem;
+   font-weight: 1000;
+}
+
+.bolt-body .bolt-avatar {
+   max-width: 30rem;
+}
+
+.bolt-body footer {
+   display: flex;
+   justify-content: space-around;
+   column-gap: 5px;
+   row-gap: 5px;
+   flex-wrap: wrap;
+}
+
+.bolt-body footer button {
+   font-size: 1.5rem;
+   padding: 1rem 2rem;
+   margin: 1rem 0rem;
+}
+
+.bolt-body footer .bttn-primary:hover {
+   background-color: white;
+   border-color: black;
+}
+
+.bolt-body footer .bttn-secondary:hover {
+   background-color: var(--primary);
+   border-color: black;
+}
+
+.bolt-footer {
+   margin-top: 5rem;
+}
+
+.bolt-footer nav {
+   position: relative;
+   padding: 1rem 1rem;
+   margin: auto;
+   flex-direction: column;
+   justify-content: space-around;
+}
+
+.bolt-footer nav li {
+   padding: 1rem 0.5rem;
+}
+
+.user-guide {
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   width: 80%;
+   margin: auto;
+   text-align: left;
+   row-gap: 2rem;
+   font-size: 1.5rem;
+   color: var(--darkgrey);
+}
+
+.user-guide article {
+   display: flex;
+   flex-direction: column;
+   row-gap: 1rem;
+   width: 100%;
+}
+
+.user-guide > h2 {
+   color: var(--primary);
+}
+
+@media screen and (max-width: 768px) {
+   .nav-list-sidebar {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      position: fixed;
+      top: 4rem;
+      right: 0;
+      background-color: black;
+      opacity: 0.8;
+   }
+
+   .bolt-body {
+      flex-wrap: wrap;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+   }
+
+   .bolt-body footer button {
+      width: 100%;
+      font-size: 1rem;
+      padding: 0.5rem 1rem;
+      margin: 0.4rem 0rem;
+   }
+}
+
+/* width */
+::-webkit-scrollbar {
+   width: 10px;
+ }
+ 
+ /* Track */
+ ::-webkit-scrollbar-track {
+   background: #f1f1f1; 
+ }
+  
+ /* Handle */
+ ::-webkit-scrollbar-thumb {
+   background: #888; 
+ }
+ 
+ /* Handle on hover */
+ ::-webkit-scrollbar-thumb:hover {
+   background: #555; 
+ }

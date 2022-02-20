@@ -1,0 +1,14 @@
+
+.lists{
+    list-style: none;
+    padding-inline-start: 0px;
+}
+.lists>li{
+    border: 1px solid lightgrey;
+    padding: 0.5rem 2rem;
+    
+}
+
+.lists-spaced > li{
+    margin: 1rem 0 ;
+}

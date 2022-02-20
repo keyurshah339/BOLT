@@ -1,0 +1,65 @@
+
+
+.bttn{
+    width: max-content; 
+    letter-spacing: 1px;
+    background-color: var(--primary);
+    padding: 0.1rem 0.5rem;
+    font-size: 1.1rem;
+    position: relative;
+    overflow: hidden;
+    border-style: solid;
+}
+
+.bttn:after {
+    content: "";
+    background: black;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px !important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+  }
+  
+  .bttn:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+  }
+
+.bttn-primary{
+    border-color: var(--primary) ;   
+}
+
+.bttn-secondary{
+    background-color:white;
+    border-color: var(--primary) ;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.bttn-secondary:after{
+    background: #659DBD;
+}
+
+.bttn-icon{
+    padding: auto;
+    letter-spacing: normal;
+    border-color: var(--primary);
+}
+
+.bttn-floating-action{
+    letter-spacing: normal;
+    padding: 0;
+    border: 15px solid var(--primary);
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    color: black;
+    position: fixed;
+    bottom: 5rem;
+    right: 3vw;
+}

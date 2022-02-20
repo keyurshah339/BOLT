@@ -1,0 +1,29 @@
+.alert {
+    border-radius: 10px;
+    padding: 1rem 2rem;
+    margin-bottom: 10px;
+    width: max-content;
+    text-align: center;
+}
+
+.alert-success {
+    background-color: var(--alertSuccesColor);
+    border: 1px solid var(--alertSuccesColorBorder);
+
+}
+
+.alert-error {
+    background-color: var(--alertErrorColor);
+    border: 1px solid var(--alertErrorColorBorder);
+}
+
+.alert-warning {
+    background-color: var(--alertWarningColor);
+    border: 1px solid var(--alertWarningColorBorder);
+}
+
+.alert-info {
+    background-color: var(--alertInfoColor);
+    border: 1px solid var(--alertInfoColorBorder);
+}
+
