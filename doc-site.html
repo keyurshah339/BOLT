@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bolt | UI</title>
+    <link href="./CSS/main.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+
+<body style="background-size:1200px 8700px;">
+
+    <header class="bolt-header">
+        <script>
+            var shiftWindow = function() { scrollBy(0, -100) };
+            window.addEventListener("hashchange", shiftWindow);
+            function load() { if (window.location.hash) shiftWindow(); }
+            console.log(window.location)
+          </script>
+        <nav class="nav nav-dark " >
+            <h1 class="shadow-text-white"><a href="./index.html">Bolt UI</a></h1>
+            <button class="hamburger"><i class="fa fa-bars fa-2x" aria-hidden="true"
+                    id="hamburgerBttn-doc"></i></button>
+            <ul class="nav-list">
+                <li><a href="./index.html">HOME</a></li>
+                <li><a href="./doc-site.html">DOC</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="doc-layout">
+        <aside class="components-nav">
+            <h2>Components</h2>
+            <ul>
+                <a href="#avatar" onclick="hideSideNavBar()">
+                    <li>Avatar</li>
+                </a>
+
+                <a href="#alert" onclick="hideSideNavBar()">
+                    <li>
+                        Alert</li>
+                </a>
+
+                <a href="#badge" onclick="hideSideNavBar()">
+                    <li>
+                        Badge</li>
+                </a>
+
+                <a href="#buttons" onclick="hideSideNavBar()">
+                    <li>
+                        Buttons</li>
+                </a>
+
+                <a href="#card" onclick="hideSideNavBar()">
+                    <li> Card</li>
+                </a>
+
+                <a href="#images" onclick="hideSideNavBar()">
+                    <li>
+                        Images</li>
+                </a>
+
+                <a href="#input" onclick="hideSideNavBar()">
+                    <li>
+                        Input</li>
+                </a>
+
+                <a href="#lists" onclick="hideSideNavBar()">
+                    <li>
+                        List</li>
+                </a>
+
+                <a href="#badge" onclick="hideSideNavBar()">
+                    <li>
+                        Badge</li>
+                </a>
+
+                <a href="#modal" onclick="hideSideNavBar()">
+                    <li>
+                        Modal</li>
+                </a>
+
+                <a href="#rating" onclick="hideSideNavBar()">
+                    <li>
+                        Rating</li>
+                </a>
+
+                <a href="#grids" onclick="hideSideNavBar()">
+                    <li>
+                        Grids</li>
+                </a>
+
+                <a href="#text-utilities" onclick="hideSideNavBar()">
+                    <li>
+                        Text Utilities</li>
+                </a>
+
+                <a href="#notify" onclick="hideSideNavBar()">
+                    <li>
+                        Notify</li>
+                </a>
+
+            </ul>
+        </aside>
+
+        <div class="components-doc">
+
+            <!-- Avatar Component -->
+            <div class="component" id="avatar">
+                <h2>Avatar</h2>
+                <p class="description">Show the active user identity using Avatar component</p>
+                <h3>Round avatar</h3>
+                <div class="avatar-examples">
+                    <a href=""><img class="avatar avatar-small" src="./assets/Web-Dev.png"></a>
+                    <a href=""><img class="avatar avatar-medium" src="./assets/Web-Dev.png"></a>
+                    <a href=""><img class="avatar avatar-large" src="./assets/Web-Dev.png"></a>
+                </div>
+                <button class="bttn bttn-secondary" onclick="showCodeFunctionality('round-avatar-code')">Code
+                    &lt/&gt
+                </button>
+                <div id="round-avatar-code" style="display: none;">
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=sharp&l=auto&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Ca%2520href%253D%2522%2522%253E%253Cimg%2520class%253D%2522avatar%2520avatar-small%2522%2520src%253D%2522.%252FWeb-Dev.png%2522%253E%253C%252Fa%253E%250A%253Ca%2520href%253D%2522%2522%253E%253Cimg%2520class%253D%2522avatar%2520avatar-medium%2522%2520src%253D%2522.%252FWeb-Dev.png%2522%253E%253C%252Fa%253E%250A%253Ca%2520href%253D%2522%2522%253E%253Cimg%2520class%253D%2522avatar%2520avtar-large%2522%2520src%253D%2522.%252FWeb-Dev.png%2522%253E%253C%252Fa%253E"
+                        style="width: 100%; height: 130px; border:0; transform: scale(1); overflow:hidden;"
+                        sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                </div>
+                <h3>Square Avatar</h3>
+                <div class="avatar-examples">
+                    <a href=""><img class="avatar-square avatar-square-small" src="./assets/Web-Dev.png"></a>
+                    <a href=""><img class="avatar-square avatar-square-medium" src="./assets/Web-Dev.png"></a>
+                    <a href=""><img class="avatar-square avatar-square-large" src="./assets/Web-Dev.png"></a>
+                </div>
+                <button class="bttn bttn-secondary" onclick="showCodeFunctionality('square-avatar-code')">Code
+                    &lt/&gt
+                </button>
+                <div id="square-avatar-code" style="display: none;">
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=sharp&l=auto&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Ca%2520href%253D%2522%2522%253E%253Cimg%2520class%253D%2522avatar-square%2520avatar-square-small%2522%2520src%253D%2522.%252FWeb-Dev.png%2522%253E%253C%252Fa%253E%250A%253Ca%2520href%253D%2522%2522%253E%253Cimg%2520class%253D%2522avatar-square%2520avatar-square-medium%2522%2520src%253D%2522.%252FWeb-Dev.png%2522%253E%253C%252Fa%253E%250A%253Ca%2520href%253D%2522%2522%253E%253Cimg%2520class%253D%2522avatar-square%2520avatar-square-large%2522%2520src%253D%2522.%252FWeb-Dev.png%2522%253E%253C%252Fa%253E"
+                        style="width: 679px; height: 130px; border:0; transform: scale(1); overflow:hidden;"
+                        sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                </div>
+
+            </div>
+
+            <!-- Alert Component -->
+            <div class="component" id="alert">
+                <h2>Alert</h2>
+                <p class="description">For every action there should be equivalent feedback to users. Provide
+                    repsonive
+                    messages to users by using the Alerts </p>
+                <div class="alert-examples">
+                    <div class="alert alert-success">
+                        <p>✔️ This is success alert!</p>
+                    </div>
+                    <div class="alert alert-error">
+                        <p>❌ This is an error alert!</p>
+                    </div>
+                    <div class="alert alert-warning">
+                        <p>⚠️ This is warning alert!</p>
+                    </div>
+                    <div class="alert alert-info">
+                        <p><i class="fa fa-info-circle" aria-hidden="true"></i> This is an information alert!</p>
+                    </div>
+                </div>
+                <button class="bttn bttn-secondary" onclick="showCodeFunctionality('alerts-code')">Code &lt/&gt
+                </button>
+                <div id="alerts-code" style="display: none;">
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=sharp&l=auto&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%253Cdiv%2520class%253D%2522alert%2520alert-success%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cp%253E%25E2%259C%2594%25EF%25B8%258F%2520This%2520is%2520success%2520alert%21%253C%252Fp%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522alert%2520alert-error%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cp%253E%25E2%259D%258C%2520This%2520is%2520an%2520error%2520alert%21%253C%252Fp%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522alert%2520alert-warning%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cp%253E%25E2%259A%25A0%25EF%25B8%258F%2520This%2520is%2520warning%2520alert%21%253C%252Fp%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522alert%2520alert-info%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cp%253E%250A%2520%2520%2520%2520%2520%2520%2509%253Ci%2520class%253D%2522fa%2520fa-info-circle%2522%2520aria-hidden%253D%2522true%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520This%2520is%2520an%2520information%2520alert%21%253C%252Fp%253E%250A%2520%2520%253C%252Fdiv%253E"
+                        style="width: 100%; height: 332px; border:0; transform: scale(1); overflow:hidden;"
+                        sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                </div>
+
+
+            </div>
+
+            <!-- Badge Component -->
+
+            <div class="component" id="badge">
+                <h2>Badge</h2>
+
+                <!-- Badge on icon -->
+                <h3>Badge on icon</h3>
+                <p class="description">Notifications, messages, cart etc., icons needs to have badge to display the
+                    number of respective items it has</p>
+                <div class="badge">
+                    <i class="fa fa-bell-o fa-3x" aria-hidden="true"></i>
+                    <span class="badge badge-icon">300</span>
+                </div>
+                <button class="bttn bttn-secondary" onclick="showCodeFunctionality('badge-on-icon-code')">Code
+                    &lt/&gt
+                </button>
+                <div id="badge-on-icon-code" style="display: none;">
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=sharp&l=auto&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522badge-icon%2522%253E%250A%2520%2520%253Ci%2520class%253D%2522fa%2520fa-bell-o%2520fa-3x%2522%2520aria-hidden%253D%2522true%2522%253E%253C%252Fi%253E%250A%2520%2520%253Cspan%2520class%253D%2522badge-icon%2520badge%2522%253E300%253C%252Fspan%253E%250A%253C%252Fdiv%253E"
+                        style="width: 100%; height: 148px; border:0; transform: scale(1); overflow:hidden;"
+                        sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                </div>
+
+                <!-- Badge on avatar -->
+                <h3>Badge on avatar</h3>
+                <p class="description">Show the status on avatar using badges. Change the badge-status class color
+                    and
+                    use different icons to show different status </p>
+                <div class="avatar-examples ">
+                    <!-- Badge on small avatar -->
+                    <div class="badge">
+                        <a href=""><img class="avatar avatar-small" src="./assets/Web-Dev.png"></a>
+                        <span class="badge-status badge-status-small"><i class="fa fa-circle"
+                                aria-hidden="true"></i></span>
+
+                    </div>
+                    <!-- Badge on medium avatar -->
+                    <div class="badge">
+                        <a href=""><img class="avatar avatar-medium" src="./assets/Web-Dev.png"></a>
+                        <span class="badge-status badge-status-medium"><i class="fa fa-circle"
+                                aria-hidden="true"></i></span>
+
+                    </div>
+                    <!-- Badge on large avatar -->
+                    <div class="badge">
+                        <a href=""><img class="avatar avatar-large" src="./assets/Web-Dev.png"></a>
+                        <span class="badge-status badge-status-large"><i class="fa fa-circle"
+                                aria-hidden="true"></i></span>
+                    </div>
+                </div>
+                <button class="bttn bttn-secondary" onclick="showCodeFunctionality('badge-on-avatar-code')">Code
+                    &lt/&gt
+                </button>
+                <div id="badge-on-avatar-code" style="display: none;">
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=sharp&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253C%21--%2520Badge%2520on%2520small%2520avatar%2520--%253E%250A%253Cdiv%2520class%253D%2522badge%2522%253E%250A%2520%2520%2520%2520%253Ca%2520href%253D%2522%2522%253E%253Cimg%2520class%253D%2522avatar%2520avatar-small%2522%2520src%253D%2522%2522%253E%253C%252Fa%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522badge-status%2520badge-status-small%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa%2520fa-circle%2522%2520aria-hidden%253D%2522true%2522%253E%253C%252Fi%253E%250A%2520%2520%2509%253C%252Fspan%253E%250A%250A%253C%252Fdiv%253E%250A%253C%21--%2520Badge%2520on%2520medium%2520avatar%2520--%253E%250A%253Cdiv%2520class%253D%2522badge%2522%253E%250A%2520%2520%2520%2520%253Ca%2520href%253D%2522%2522%253E%253Cimg%2520class%253D%2522avatar%2520avatar-medium%2522%2520src%253D%2522%2522%253E%253C%252Fa%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522badge-status%2520badge-status-medium%2522%253E%250A%2520%2520%2520%2520%2509%253Ci%2520class%253D%2522fa%2520fa-circle%2522%2520aria-hidden%253D%2522true%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%250A%253C%21--%2520Badge%2520on%2520large%2520avatar%2520--%253E%250A%253Cdiv%2520class%253D%2522badge%2522%253E%250A%2520%2520%2520%2520%253Ca%2520href%253D%2522%2522%253E%253Cimg%2520class%253D%2522avatar%2520avatar-large%2522%2520src%253D%2522%2522%253E%253C%252Fa%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522badge-status%2520badge-status-large%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fa%2520fa-circle%2522%2520aria-hidden%253D%2522true%2522%253E%253C%252Fi%253E%250A%2520%2520%2509%253C%252Fspan%253E%250A%253C%252Fdiv%253E"
+                        style="width: 100%; height: 498px; border:0; transform: scale(1); overflow:hidden;"
+                        sandbox="allow-scripts allow-same-origin">
+                    </iframe> </div>
+
+            </div>
+
+            <!-- Buttons Component -->
+
+            <div class="component" id="buttons">
+                <h2>Buttons</h2>
+                <p class="description">Buttons are used on do take some actions after the user click </p>
+                <div>
+                    <button class="bttn bttn bttn-primary">Button</button>
+                    <button class="bttn bttn-secondary">Link</button>
+                    <button class="bttn bttn-icon"><i class="fa fa-shopping-cart fa-lg" aria-hidden="true"></i></button>
+                    <button class="bttn bttn-floating-action" style="position: relative; top: 0; left: 0.5rem;"><i
+                            class="fa fa-plus" aria-hidden="true"></i></button>
+                </div>
+                <button class="bttn bttn-secondary" onclick="showCodeFunctionality('buttons-code')">Code &lt/&gt
+                </button>
+                <div id="buttons-code" style="display: none;">
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=sharp&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253C%21--%2520Primary%2520Button%2520--%253E%250A%253Cbutton%2520class%253D%2522bttn%2520bttn bttn-primary%2522%253EButton%253C%252Fbutton%253E%250A%253C%21--%2520Secondary%2520Button%2520--%253E%250A%253Cbutton%2520class%253D%2522bttn%2520bttn-secondary%2522%253ELink%253C%252Fbutton%253E%250A%253C%21--%2520Icon%2520Button%2520--%253E%250A%253Cbutton%2520class%253D%2522bttn%2520bttn-icon%2522%253E%250A%2520%2520%253Ci%2520class%253D%2522fa%2520fa-cart-plus%2520fa-lg%2522%2520aria-hidden%253D%2522true%2522%253E%253C%252Fi%253E%250A%253C%252Fbutton%253E%250A%253C%21--%2520Floating%2520Action%2520Button%2520--%253E%250A%253Cbutton%2520class%253D%2522bttn%2520bttn-floating-action%2522%253E%250A%2520%2520%253Ci%2520class%253D%2522fa%2520fa-plus%2522%2520aria-hidden%253D%2522true%2522%253E%253C%252Fi%253E%250A%253C%252Fbutton%253E"
+                        style="width: 100%; height: 295px; border:0; transform: scale(1); overflow:hidden;"
+                        sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                </div>
+            </div>
+
+            <!-- Cards Component -->
+
+            <div class="component" id="card">
+                <h2>Cards</h2>
+                <p class="description">A card is a container which includes options for headers and footers, a wide
+                    variety of content, background colors, and display action items. </p>
+                <h3>Cards with badges</h3>
+                <p class="description">A card with badge higlights the specific card from other cards</p>
+                <div class="card">
+                    <img class="card-img" src="./assets/Web-Dev.png" alt="card">
+                    <span class="card-badge">new</span>
+                    <span class="card-name">Product name</span>
+                    <span class="card-tagline">Product tagline</span>
+                    <span class="card-price">Product price</span>
+                </div>
+                <button class="bttn bttn-secondary" onclick="showCodeFunctionality('card-with-badge-code')">Code
+                    &lt/&gt
+                </button>
+                <div id="card-with-badge-code" style="display: none;">
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=sharp&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253C%21--%2520Cards%2520with%2520badges%2520--%253E%250A%253Cdiv%2520class%253D%2522card%2522%253E%250A%2520%2520%2520%2520%253Cimg%2520class%253D%2522card-img%2522%2520src%253D%2522%2522%2520alt%253D%2522card%2522%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522card-badge%2522%253Enew%253C%252Fspan%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522card-name%2522%253EProduct%2520name%253C%252Fspan%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522card-tagline%2522%253EProduct%2520tagline%253C%252Fspan%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522card-price%2522%253EProduct%2520price%253C%252Fspan%253E%250A%253C%252Fdiv%253E"
+                        style="width: 100%; height: 222px; border:0; transform: scale(1); overflow:hidden;"
+                        sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                </div>
+                <h3>Cards with dismiss</h3>
+                <p class="description">Close the shown card using dismiss option on it. Add functionality to the
+                    dimiss
+                    button on the card</p>
+                <div class="card" id="dismiss-card" style="display: block;">
+                    <img class="card-img" src="./assets/Web-Dev.png" alt="card">
+                    <button onclick="showCodeFunctionality('dismiss-card')" class="card-dismiss">x</button>
+                    <span class="card-name">Product name</span>
+                    <span class="card-tagline">Product tagline</span>
+                    <span class="card-price">Product price</span>
+                </div>
+                <button class="bttn bttn-secondary" onclick="showCodeFunctionality('card-with-dismiss-code')">Code
+                    &lt/&gt
+                </button>
+                <div id="card-with-dismiss-code" style="display: none;">
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=sharp&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253C%21--%2520Cards%2520with%2520dismiss%2520--%253E%250A%253Cdiv%2520class%253D%2522card%2522%253E%250A%2520%2520%2520%2520%253Cimg%2520class%253D%2522card-img%2522%2520src%253D%2522%2522%2520alt%253D%2522card%2522%253E%250A%2520%2520%2520%2520%253Cbutton%2520class%253D%2522card-dismiss%2522%253Ex%253C%252Fbutton%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522card-name%2522%253EProduct%2520name%253C%252Fspan%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522card-tagline%2522%253EProduct%2520tagline%253C%252Fspan%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522card-price%2522%253EProduct%2520price%253C%252Fspan%253E%250A%253C%252Fdiv%253E"
+                        style="width: 100%; height: 222px; border:0; transform: scale(1); overflow:hidden;"
+                        sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                </div>
+
+                <h3>Cards with Text Overlay</h3>
+                <p class="description">Overlay the important text on the card to highlight it</p>
+                <div class="card">
+                    <img class="card-img" src="./assets/Web-Dev.png" alt="card">
+                    <span class="card-text">perfect camp</span>
+                    <span class="card-name">Product name</span>
+                    <span class="card-tagline">Product tagline</span>
+                    <span class="card-price">Product price</span>
+                </div>
+                <button class="bttn bttn-secondary" onclick="showCodeFunctionality('card-with-text-overlay-code')">Code
+                    &lt/&gt
+                </button>
+                <div id="card-with-text-overlay-code" style="display: none;">
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=sharp&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253C%21--%2520Cards%2520with%2520textoverlay%2520--%253E%250A%253Cdiv%2520class%253D%2522card%2522%253E%250A%2520%2520%2520%2520%253Cimg%2520class%253D%2522card-img%2522%2520src%253D%2522%2522%2520alt%253D%2522card%2522%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522card-text%2522%253Eperfect%2520camp%253C%252Fspan%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522card-name%2522%253EProduct%2520name%253C%252Fspan%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522card-tagline%2522%253EProduct%2520tagline%253C%252Fspan%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522card-price%2522%253EProduct%2520price%253C%252Fspan%253E%250A%253C%252Fdiv%253E"
+                        style="width: 100%; height: 222px; border:0; transform: scale(1); overflow:hidden;"
+                        sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                </div>
+
+                <h3>Text only cards</h3>
+                <p  class="description">When we have only text that needs to be shown as card use below simple text
+                    only
+                    cards</p>
+                <div class="card">
+                    <div class="card-title">
+                        <h3 style="color: black;">Card Title</h3>
+                    </div>
+                    <div class="card-body">
+                        <p style="color: black;">I am a simple card with some text and links</p>
+                    </div>
+
+                    <div class="card-links">
+                        <span><button class="bttn bttn-primary">Button</button></span>
+                        <span><button class="bttn bttn-secondary">Link</a> </button>
+                    </div>
+                </div>
+                <button class="bttn bttn-secondary" onclick="showCodeFunctionality('text-only-card-code')">Code
+                    &lt/&gt
+                </button>
+                <div id="text-only-card-code" style="display: none;">
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=sharp&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253C%21--%2520Text%2520only%2520Cards%2520--%253E%250A%253Cdiv%2520class%253D%2522card%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-title%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ch3%253ECard%2520Title%253C%252Fh3%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-body%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%253EI%2520am%2520a%2520simple%2520card%2520with%2520some%2520text%2520and%2520links%253C%252Fp%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-links%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%253E%253Cbutton%2520class%253D%2522bttn bttn-primary%2522%253EButton%253C%252Fbutton%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%253E%253Cbutton%2520class%253D%2522bttn bttn-secondary%2522%253ELink%253C%252Fa%253E%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+                        style="width: 100%; height: 314px; border:0; transform: scale(1); overflow:hidden;"
+                        sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                </div>
+
+                <h3>Horizontal Card</h3>
+                <p class="description">Show cards view in landscape on large screens and normal card in smaller
+                    screens.
+                    Yes it is responsive card </p>
+                <div class="card card-horizontal">
+                    <img class="card-img" src="./assets/Web-Dev.png" alt="card">
+                    <div class="card-side-txt">
+                        <span class="card-title">Card Title</span>
+                        <p style="color: black;">I am a simple card with some text and links</p>
+                        <div class="card-links">
+                            <span><button class="bttn bttn-primary">Button</button></span>
+                            <span><button class="bttn bttn-secondary">Link</button> </span>
+                        </div>
+
+                    </div>
+                </div>
+                <button class="bttn bttn-secondary" onclick="showCodeFunctionality('horizontal-card-code')">Code
+                    &lt/&gt
+                </button>
+                <div id="horizontal-card-code" style="display: none;">
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=sharp&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253C%21--%2520Horizontal%2520Card%2520--%253E%250A%253Cdiv%2520class%253D%2522card%2520card-horizontal%2522%253E%250A%2520%2520%2520%2520%253Cimg%2520class%253D%2522card-img%2522%2520src%253D%2522%2522%2520alt%253D%2522card%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-side-txt%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522card-title%2522%253ECard%2520Title%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%253EI%2520am%2520a%2520simple%2520card%2520with%2520some%2520text%2520and%2520links%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-links%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%253E%253Cbutton%2520class%253D%2522bttn bttn-primary%2522%253EButton%253C%252Fbutton%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%253E%253Cbutton%2520class%253D%2522bttn bttn-secondary%2522%253ELink%253C%252Fbutton%253E%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+                        style="width: 100%; height: 295px; border:0; transform: scale(1); overflow:hidden;"
+                        sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                </div>
+
+                <!-- Cards with Shadow -->
+                <h3>Cards with Shadow</h3>
+                <p class="description">Shadowing always gives 3D effect to an element</p>
+                <div class="card card-shadow">
+                    <img class="card-img" src="./assets/Web-Dev.png" alt="card">
+                    <span class="card-name">Product name</span>
+                    <span class="card-tagline">Product tagline</span>
+                    <span class="card-price">Product price</span>
+                </div>
+                <button class="bttn bttn-secondary" onclick="showCodeFunctionality('shadow-card-code')">Code
+                    &lt/&gt
+                </button>
+                <div id="shadow-card-code" style="display: none;">
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=sharp&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253C%21--%2520Shadow%2520Card%2520--%253E%250A%253Cdiv%2520class%253D%2522card%2520card-shadow%2522%253E%250A%2520%2520%2520%2520%253Cimg%2520class%253D%2522card-img%2522%2520src%253D%2522%2522%2520alt%253D%2522card%2522%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522card-name%2522%253EProduct%2520name%253C%252Fspan%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522card-tagline%2522%253EProduct%2520tagline%253C%252Fspan%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522card-price%2522%253EProduct%2520price%253C%252Fspan%253E%250A%253C%252Fdiv%253E"
+                        style="width: 100%; height: 203px; border:0; transform: scale(1); overflow:hidden;"
+                        sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                </div>
+
+            </div>
+
+            <!-- Images component -->
+
+            <div class="component" id="images">
+                <h2>images</h2>
+
+                <!-- Responsive Image -->
+                <h3>Responsive-image</h3>
+                <p class="description">Having images responsive on the sites makes it beatiful and not to worry of
+                    screen sizes much</p>
+                <img class="image-responsive" src="./assets/Web-Dev.png">
+
+                <!-- Round Responsive Image -->
+                <h3>Round Responsive-image</h3>
+                <p class="description">Another resposive image but this time round which will fit for all the screen
+                    sizes</p>
+                <img class="image-responsive image-round" src="./assets/Web-Dev.png">
+                <button class="bttn bttn-secondary" onclick="showCodeFunctionality('images-code')">Code
+                    &lt/&gt
+                </button>
+                <div id="images-code" style="display: none;">
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=sharp&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253C%21--%2520Responsive%2520image--%253E%250A%253Cimg%2520class%253D%2522image-responsive%2522%2520src%253D%2522%2522%253E%250A%250A%253C%21--%2520Round%2520Responsive%2520image--%253E%250A%253Cimg%2520class%253D%2522image-responsive%2520image-round%2522%2520src%253D%2522%2522%253E"
+                        style="width: 100%; height: 166px; border:0; transform: scale(1); overflow:hidden;"
+                        sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                </div>
+            </div>
+
+            <!-- Input component -->
+
+            <div class="component" id="input">
+                <h2>Input</h2>
+                <p class="description">User inputs are essential for a site to show the contents to the usres. So
+                    the
+                    input elements are</p>
+
+                <!-- Primary Input component -->
+                <h3>Primary input</h3>
+                <div>
+                    <input class="input input-primary" type="text" placeholder="input here" />
+                </div>
+
+                <!-- Secondary Input component -->
+                <h3>Secondary input</h3>
+                <div>
+                    <input class="input input-secondary" type="text" placeholder="input here" />
+                </div>
+                <button class="bttn bttn-secondary" onclick="showCodeFunctionality('input-code')">Code
+                    &lt/&gt
+                </button>
+                <div id="input-code" style="display: none;">
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=sharp&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253C%21--%2520Primary%2520Input%2520component%2520--%253E%250A%253Cinput%2520class%253D%2522input%2520input-primary%2522%2520type%253D%2522text%2522%2520placeholder%253D%2522input%2520here%2522%2520%252F%253E%250A%250A%253C%21--%2520Secondary%2520Input%2520component%2520--%253E%250A%253Cinput%2520class%253D%2522input%2520input-secondary%2522%2520type%253D%2522text%2522%2520placeholder%253D%2522input%2520here%2522%2520%252F%253E"
+                        style="width: 628px; height: 166px; border:0; transform: scale(1); overflow:hidden;"
+                        sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                </div>
+            </div>
+
+            <!-- Lists Component  -->
+
+            <div class="component" id="lists">
+                <h2>lists</h2>
+                <p class="description">Listing of data seen as multiple articles, notoification so on and here you
+                    can
+                    find simple spaced and stacked listing items</p>
+                <h3>Spaced</h3>
+                <ul class="lists lists-spaced">
+                    <li>item 1</li>
+                    <li>item 2</li>
+                    <li>item 3</li>
+                    <li>item 4</li>
+                </ul>
+                <h3>Stacked</h3>
+                <ul class="lists  ">
+                    <li>item 1</li>
+                    <li>item 2</li>
+                    <li>item 3</li>
+                    <li>item 4</li>
+                </ul>
+                <button class="bttn bttn-secondary" onclick="showCodeFunctionality('lists-code')">Code
+                    &lt/&gt
+                </button>
+                <div id="lists-code" style="display: none;">
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=sharp&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253C%21--%2520Spaced%2520List%2520--%253E%250A%253Cul%2520class%253D%2522lists%2520lists-spaced%2522%253E%250A%2520%2520%2520%2520%253Cli%253Eitem%25201%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%253Eitem%25202%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%253Eitem%25203%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%253Eitem%25204%253C%252Fli%253E%250A%253C%252Ful%253E%250A%250A%253C%21--%2520Stacked%2520List%2520--%253E%250A%253Cul%2520class%253D%2522lists%2520 %2522%253E%250A%2520%2520%2520%2520%253Cli%253Eitem%25201%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%253Eitem%25202%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%253Eitem%25203%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%253Eitem%25204%253C%252Fli%253E%250A%253C%252Ful%253E"
+                        style="width: 100%; height: 350px; border:0; transform: scale(1); overflow:hidden;"
+                        sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                </div>
+            </div>
+
+            <!-- Modal Component -->
+
+            <div class="component" id="modal">
+                <h2>Modal</h2>
+                <p class="description">Modals are dialog boxes pops up on the screen and will stay until actions are
+                    taken</p>
+                <button class="bttn bttn-primary" onclick="showCodeFunctionality('modal-component')">Modal
+                    please</button>
+
+                <div class="modal" id="modal-component" style="display: none;">
+                    <div class="modal-title">
+                        <h3>Modal Title</h3>
+                    </div>
+                    <div class="modal-body">
+                        <p>Modals are dialog boxes pops up on the screen and will stay until actions are taken</p>
+                    </div>
+                    <footer>
+                        <button class="bttn bttn-primary" onclick="showCodeFunctionality('modal-component')">Ok</button>
+                        <button class="bttn bttn-secondary"
+                            onclick="showCodeFunctionality('modal-component')">Cancel</button>
+                    </footer>
+
+                </div>
+                <button class="bttn bttn-secondary" onclick="showCodeFunctionality('modal-code')">Code
+                    &lt/&gt
+                </button>
+                <div id="modal-code" style="display: none;">
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=sharp&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522modal%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522modal-title%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ch3%253EModal%2520Title%253C%252Fh3%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522modal-body%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%253EModals%2520are%2520dialog%2520boxes%2520pops%2520up%2520on%2520the%2520screen%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520and%2520will%2520stay%2520until%2520actions%2520are%2520taken%253C%252Fp%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cfooter%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522bttn bttn-primary%2522%253EOk%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522bttn bttn-secondary%2522%253ECancel%253C%252Fbutton%253E%250A%2520%2520%2520%2520%253C%252Ffooter%253E%250A%253C%252Fdiv%253E"
+                        style="width: 100%; height: 314px; border:0; transform: scale(1); overflow:hidden;"
+                        sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                </div>
+            </div>
+
+            <!-- Ratings Component -->
+
+            <div class="component" id="rating">
+                <h2>Rating</h2>
+                <p class="description">We rate everthings around us. One of the way to showing ratings is by using
+                    the
+                    stars.</p>
+                <h4>Star Ratings</h4>
+                <div class="rating">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star "></span>
+                    <span class="fa fa-star "></span>
+                </div>
+                <button class="bttn bttn-secondary" onclick="showCodeFunctionality('star-rating-code')">Code
+                    &lt/&gt
+                </button>
+                <div id="star-rating-code" style="display: none;">
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=sharp&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522rating%2522%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522fa%2520fa-star%2520checked%2522%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522fa%2520fa-star%2520checked%2522%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522fa%2520fa-star%2520checked%2522%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522fa%2520fa-star%2520%2522%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522fa%2520fa-star%2520%2522%253E%253C%252Fspan%253E%250A%253C%252Fdiv%253E"
+                        style="width: 100%; height: 203px; border:0; transform: scale(1); overflow:hidden;"
+                        sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                </div>
+            </div>
+
+            <!-- Grid Component -->
+
+            <div class="component" id="grids">
+                <h2>Simplified Grid</h2>
+                <p class="description">Grids are usefully to place the UI components in 2-dimension. Below are the
+                    simple and responsive grids</p>
+
+                <h3>Two items in grid</h3>
+                <div class="grid two">
+                    <div class="item">Item 1</div>
+                    <div class="item">Item 2</div>
+                </div>
+
+                <h3>Three items in grid</h3>
+                <div class="grid three">
+                    <div class="item">Item 1</div>
+                    <div class="item">Item 2</div>
+                    <div class="item">Item 3</div>
+                </div>
+
+                <button class="bttn bttn-secondary" onclick="showCodeFunctionality('grids-code')">Code
+                    &lt/&gt
+                </button>
+
+                <div id="grids-code" style="display: none;">
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=sharp&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253C%21--%2520Two%2520itmes%2520in%2520a%2520Grid%2520--%253E%250A%253Cdiv%2520class%253D%2522grid%2520two%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522item%2522%253EItem%25201%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522item%2522%253EItem%25202%253C%252Fdiv%253E%250A%253C%252Fdiv%253E%250A%250A%253C%21--%2520Three%2520itmes%2520in%2520a%2520Grid%2520--%253E%250A%253Cdiv%2520class%253D%2522grid%2520three%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522item%2522%253EItem%25201%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522item%2522%253EItem%25202%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522item%2522%253EItem%25203%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+                        style="width: 100%; height: 295px; border:0; transform: scale(1); overflow:hidden;"
+                        sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                </div>
+            </div>
+
+            <!-- Text-utilities Component -->
+
+            <div class="component" id="text-utilities">
+                <h2>Text Utilities</h2>
+                <p class="description">In a page we come across different text to highlight there importance or
+                    represent a content. Below are few useful handy text utilities</p>
+
+                <h3>Headings</h3>
+                <div>
+                    <p class="heading heading-normal">Simple Heading</p>
+                    <p class="heading heading-colored">Colored Heading</p>
+                    <p class="heading heading-shadow">Shadow Heading</p>
+                </div>
+
+                <h3>Small text</h3>
+                <span class="text-small">Small Text</span>
+                <h3>Gray Text</h3>
+                <span class="text-gray">A gray text</span>
+                <h3>Center</h3>
+                <p class="text-center">I'm a text, sit at center</p>
+                <button class="bttn bttn-secondary" onclick="showCodeFunctionality('text-utilities-code')">Code
+                    &lt/&gt
+                </button>
+                <div id="text-utilities-code" style="display: none;">
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=sharp&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Ch1%2520class%253D%2522heading%2520heading-normal%2522%253ESimple%2520Heading%253C%252Fh1%253E%250A%250A%253Ch1%2520class%253D%2522heading%2520heading-colored%2522%253EColored%2520Heading%253C%252Fh1%253E%250A%250A%253Ch1%2520class%253D%2522heading%2520heading-shadow%2522%253EShadow%2520Heading%253C%252Fh1%253E%250A%250A%253Cspan%2520class%253D%2522text-small%2522%253ESmall%2520Text%253C%252Fspan%253E%250A%250A%253Cspan%2520class%253D%2522text-gray%2522%253EA%2520gray%2520text%253C%252Fspan%253E%250A%250A%253Cp%2520class%253D%2522text-center%2522%253EI%27m%2520a%2520text%252C%2520sit%2520at%2520center%253C%252Fp%253E"
+                        style="width: 100%; height: 277px; border:0; transform: scale(1); overflow:hidden;"
+                        sandbox="allow-scripts allow-same-origin">
+                    </iframe> </div>
+            </div>
+
+            <!-- Notify Component -->
+            <div class="component" id="notify">
+                <h2>Notify</h2>
+                <p class="description">The notify component has a message that appears at the bottom of the
+                    interface to
+                    provide quick, at-a-glance feedback on the outcome of an action</p>
+
+                <button class="bttn bttn-primary" onclick="showFloatingNotification('notify-component')">Notify Me
+                </button>
+                <div class="notify" id="notify-component" style="display: none;">
+                    <p>Here is a notification for 3s</p>
+                    <button class="dismiss" onclick="showFloatingNotification('notify-component')">X</button>
+                </div>
+
+                <button class="bttn bttn-secondary" onclick="showCodeFunctionality('notify-code')">Code
+                    &lt/&gt
+                </button>
+                <div id="notify-code" style="display: none;">
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=sharp&l=htmlmixed&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522notify%2522%253E%250A%2520%2520%2520%2520%253Cp%253EHere%2520is%2520a%2520notification%2520for%25203s%253C%252Fp%253E%250A%2520%2520%2520%2520%253Cbutton%2520class%253D%2522dismiss%2522%253EX%253C%252Fbutton%253E%250A%253C%252Fdiv%253E"
+                        style="width: 100%; height: 148px; border:0; transform: scale(1); overflow:hidden;"
+                        sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                </div>
+
+            </div>
+
+        </div>
+
+        <footer class="doc-footer">
+            <nav class="nav nav-dark">
+                <h4 style="color: whitesmoke;">Crafted by  by <a
+                        href="https://pruthvirajmv.netlify.app/">keyurshah</a>
+                </h4>
+                <ul class="nav-list" style="display: flex;">
+                    <li> <a href="https://github.com/pruthvirajmv" target="_blank">
+                            <i class="fa fa-github fa-lg" aria-hidden="true"></i></a> </li>
+
+                    <li>
+                        <a href="https://twitter.com/pruthviraj528" target="_blank">
+                            <i class="fa fa-twitter-square" aria-hidden="true"></i></i></a>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </footer>
+
+
+
+    </main>
+    <a href="doc-site.html#avatar">
+        <button class="doc-site bttn bttn-floating-action">
+            <i class="fa fa-angle-double-up fa-lg" aria-hidden="true"></i>
+        </button>
+    </a>
+
+    <script src="./functionalities/showCodeFunctionality.js"></script>
+    <script src="./functionalities/hamburgerMenuToggle.js"></script>
+    <script src="./functionalities/showFloatingNotification.js"></script>
+
+</body>
+
+</html>
