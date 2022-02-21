@@ -3,7 +3,7 @@
     bottom: 5rem;
     right: 40vw;
     display: flex;
-    background-color: var(--darkgrey);
+    background-color: black;
     border-radius: 0px;
     color: var(--primary);
     font-size: 0.8rem;
