@@ -1,25 +1,25 @@
-.heading{
-    letter-spacing: 0.1rem;
-    font-size: 2rem;
-    font-weight: 900;
-}
+    .heading{
+        letter-spacing: 0.1rem;
+        font-size: 2rem;
+        font-weight: 900;
+    }
 
-.heading-normal{
-    font-weight: 9
-}
+    .heading-normal{
+        font-weight: 9
+    }
 
-.heading-colored{
-    color: var(--primary);
-}
+    .heading-colored{
+        color: var(--primary);
+    }
 
-.heading-shadow{
-    color: var(--darkgrey);
-    text-shadow: 2px 2px var(--primary);
-}
+    .heading-shadow{
+        color: var(--darkgrey);
+        text-shadow: 2px 2px var(--primary);
+    }
 
 
-.text-small{
-    font-size: small;
+    .text-small{
+        font-size: small;
 }
 
 .text-gray{
