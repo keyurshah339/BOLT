@@ -1,32 +1,33 @@
 /* Doc Site styles */
 
-.doc-layout {
-   display: grid;
-   grid-template-columns: 1fr;
-   grid-template-areas:
-      "compo-doc"
-      "doc-footer";
-   position: relative;
-   column-gap: 0.5rem;
-}
 
-.components-doc .heading {
-   text-align: center;
-   margin-bottom: 2rem;
-}
+   .doc-layout {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-areas:
+         "compo-doc"
+         "doc-footer";
+      position: relative;
+      column-gap: 0.5rem;
+   }
 
-/* Components style */
-.component {
-   position: relative;
-   display: flex;
-   flex-direction: column;
-   row-gap: 1rem;
-   height: auto;
-   padding-bottom: 3rem;
-   margin-bottom: 1.5rem;
-   border-bottom: 2px solid var(--primary);
-   align-items: left;
-}
+   .components-doc .heading {
+      text-align: center;
+      margin-bottom: 2rem;
+   }
+
+   /* Components style */
+   .component {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      row-gap: 1rem;
+      height: auto;
+      padding-bottom: 3rem;
+      margin-bottom: 1.5rem;
+      border-bottom: 2px solid var(--primary);
+      align-items: left;
+   }
 
 .component > h2 {
    text-transform: uppercase;

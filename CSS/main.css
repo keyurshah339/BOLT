@@ -18,73 +18,73 @@
 
 /* Font Import*/
 
-@import url("https://fonts.googleapis.com/css2?family=Lexend&display=swap");
+   @import url("https://fonts.googleapis.com/css2?family=Lexend&display=swap");
 
-/* Doc site styles */
-@import url("./doc-site.css");
+   /* Doc site styles */
+   @import url("./doc-site.css");
 
-/* Landing page CSS */
+   /* Landing page CSS */
 
-:root {
-   --primary: rgb(248, 248, 248);
-   --darkgrey: #d4d4d4;
-   --gray: gray;
-   --gray50: #152230;
-   --bgcolor: rgb(161, 17, 17);
-   --badgeColor: #4b5563;
+   :root {
+      --primary: rgb(248, 248, 248);
+      --darkgrey: #d4d4d4;
+      --gray: gray;
+      --gray50: #152230;
+      --bgcolor: rgb(161, 17, 17);
+      --badgeColor: #4b5563;
 
-   /* alert colors */
-   --alertSuccesColor: #a7f3d0;
-   --alertErrorColor: #fca5a5;
-   --alertWarningColor: #fef3c7;
-   --alertInfoColor: #c7d2fe;
-   --alertSuccesColorBorder: #059669;
-   --alertErrorColorBorder: #ef4444;
-   --alertWarningColorBorder: #fcd34d;
-   --alertInfoColorBorder: #60a5fa;
-}
+      /* alert colors */
+      --alertSuccesColor: #a7f3d0;
+      --alertErrorColor: #fca5a5;
+      --alertWarningColor: #fef3c7;
+      --alertInfoColor: #c7d2fe;
+      --alertSuccesColorBorder: #059669;
+      --alertErrorColorBorder: #ef4444;
+      --alertWarningColorBorder: #fcd34d;
+      --alertInfoColorBorder: #60a5fa;
+   }
 
-* {
-   margin: 0px;
-   padding: 0px;
-   box-sizing: border-box;
-}
+   * {
+      margin: 0px;
+      padding: 0px;
+      box-sizing: border-box;
+   }
 
-body {
-   background-image: url('https://afrest.com/frontend/assets/img/bg.jpg');
-   background-size:cover;
-   text-align: center;
-   margin: auto;
-   font-family: "Lexend", sans-serif;
-   scroll-behavior: smooth;
-}
+   body {
+      background-image: url('https://afrest.com/frontend/assets/img/bg.jpg');
+      background-size:cover;
+      text-align: center;
+      margin: auto;
+      font-family: "Lexend", sans-serif;
+      scroll-behavior: smooth;
+   }
 
-button {
-   cursor: pointer;
-}
+   button {
+      cursor: pointer;
+   }
 
-a {
-   text-decoration: none;
-   color: inherit;
-}
+   a {
+      text-decoration: none;
+      color: inherit;
+   }
 
-.shadow-text-white {
-   font-size: 2rem;
-   text-shadow: 1px 1px whitesmoke;
-}
+   .shadow-text-white {
+      font-size: 2rem;
+      text-shadow: 1px 1px whitesmoke;
+   }
 
-.bolt-header {
-   width: 100%;
-   position: sticky;
-   top: 0;
-   z-index: 1;
-}
+   .bolt-header {
+      width: 100%;
+      position: sticky;
+      top: 0;
+      z-index: 1;
+   }
 
-.bolt-header nav {
-   position: sticky;
+   .bolt-header nav {
+      position: sticky;
 
-   z-index: 1;
-}
+      z-index: 1;
+   }
 
 .bolt-header li:hover {
    color: white;

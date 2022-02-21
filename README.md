@@ -5,7 +5,7 @@ BoltUI is a CSS Component library created purely based on HTML and CSS.
 ## Get Started
 
 To use any of the components within this library, 2 files are required as follows:
-1. Add the external CSS on the respective HTML page.
+1. To put Bolt UI on your sites, place the below code in the head of the html document.
 ```html
 <link rel="stylesheet"
 href="https://boltui.netlify.app/CSS/main.css">
