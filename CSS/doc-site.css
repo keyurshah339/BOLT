@@ -207,3 +207,10 @@ h3{
    color: var(--primary);
 
 }
+
+.input-warning input:focus{
+   border: 2px solid red;
+}
+.input-error input:focus{
+   border: 2px solid red;
+}
